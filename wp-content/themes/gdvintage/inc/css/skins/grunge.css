@@ -1,0 +1,119 @@
+body {
+  color: #aaaaaa;
+  background: #654336 url('images/grunge.jpg');
+}
+a {
+  color: #feda31;
+}
+a:hover {
+  color: #feda31;
+}
+.container-full.top-header {
+  background-color: #5d3028;
+  background-image: url('images/grunge-banner.png');
+}
+.navbar .nav > li + li {
+  background-image: url('images/grunge-separator.png');
+}
+.navbar .btn-navbar {
+	background-color: #515151;
+	background-image: none;
+}
+.navbar .btn-navbar:hover {
+	background-color: #595959;
+	background-image: none;
+}
+header#cc-header h1.site-title a {
+  color: #feda31;
+}
+.blog-description p {
+  color: #999999;
+}
+.border-sep {
+  border-bottom: 1px solid #847167;
+}
+.border-sep::after {
+  border-top: 1px solid #847167;
+}
+/* Content */
+article.post .entry-title a {
+  color: #ffffff;
+}
+article.post .entry-title a:hover {
+  color: #feda31;
+}
+.post .entry-meta {
+  color: #aaaaaa;
+}
+.post .entry-meta a {
+  color: #aaaaaa;
+}
+.post .entry-meta a:hover {
+  color: #feda31;
+}
+article.page .entry-title,
+.comments-area #respond #reply-title,
+.comments-area .comments-title {
+  color: #ffffff;
+}
+article.post .entry-summary .more-link,
+article.post .entry-content .more-link,
+article.page .entry-summary .more-link,
+article.page .entry-content .more-link,
+input[type="submit"] {
+  color: #333333;
+  background: #feda31;
+}
+article.post .entry-summary .more-link::after,
+article.post .entry-content .more-link::after,
+article.page .entry-summary .more-link::after,
+article.page .entry-content .more-link::after {
+  border-color: transparent transparent transparent #feda31;
+}
+article.post .entry-summary .more-link:hover,
+article.post .entry-content .more-link:hover,
+article.page .entry-summary .more-link:hover,
+article.page .entry-content .more-link:hover,
+input[type="submit"]:hover {
+  background: #999999;
+}
+article.post .entry-summary .more-link:hover:after,
+article.post .entry-content .more-link:hover:after,
+article.page .entry-summary .more-link:hover:after,
+article.page .entry-content .more-link:hover:after {
+  border-color: transparent transparent transparent #999999;
+}
+.previous-post a,
+.nav-link #pre a,
+.next-post a,
+.nav-link #ne a {
+  background-color: #999999;
+}
+.previous-post a::before,
+.nav-link #pre a::before {
+  border-color: transparent #999999 transparent transparent;
+}
+.next-post a::after,
+.nav-link #ne a::after {
+  border-color: transparent transparent transparent #999999;
+}
+.site-footer {
+  background: #1e1c1a;
+}
+/* Elements */
+/* Callout */
+.callout-text {
+  background: #5d3028 url('images/grunge-bg-ribbon.png');
+}
+.callout-text::before {
+  background: url('images/grunge-left-ribbon.png');
+}
+.callout-text::after {
+  background: url('images/grunge-right-ribbon.png');
+}
+/* element headings */
+h2.box-widget-title, #widget-boxes-container h2.box-widget-title,
+.recent_posts_post_title a,
+h3.widget-title {
+  color: #ffffff;
+}

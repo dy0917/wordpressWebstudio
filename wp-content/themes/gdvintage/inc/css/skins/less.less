@@ -1,0 +1,142 @@
+/* LESS */
+/* WOOD COLORS
+@header_bg: #5d3028;
+@body_bg: #654336;
+@title_col: #ffffff;
+@heading_col: #fff;
+@col1: #d0afa8;
+@col2: #99817c;
+@footer_col: #1e1c1a;
+@text_col: #dddddd;
+@hover_col: #99817c;
+@border_col: #847167;
+*/
+
+/*GRUNGE COLORS
+@header_bg: #5d3028;
+@body_bg: #654336;
+@title_col: #feda31;
+@desc_col: #999;
+@heading_col: #fff;
+@col1: #999;
+@col2: #feda31;
+@footer_col: #1e1c1a;
+@text_col: #aaa;
+@text_button: #333;
+@link: #feda31;
+@hover_col: #feda31;
+@border_col: #847167;
+*/
+
+/*FABRIC COLORS */
+@header_bg: #5d3028;
+@body_bg: #654336;
+@title_col: #fff;
+@desc_col: #a6aabb;
+@heading_col: #fff;
+@col1: #999;
+@col2: #c4683f;
+@footer_col: #1f2433;
+@text_col: #a6aabb;
+@text_button: #333;
+@link: #c4683f;
+@hover_col: #c28164;
+@border_col: #787c90;
+
+body {
+	color: @text_col;
+	background: @body_bg url('images/fabric.jpg');
+}
+a {
+	color: @link;
+	&:hover {
+		color: @col2;
+	}
+}
+.container-full.top-header {
+	background: @header_bg url('images/fabric-banner.png');
+}
+.navbar .nav > li + li {
+	background-image: url('images/fabric-separator.png');
+}
+header#cc-header h1.site-title a {
+	color: @title_col;
+}
+.blog-description p {
+	color: @desc_col;
+}
+.border-sep {
+	border-top: 1px solid @border_col;
+	border-bottom: 1px solid @border_col;
+}
+
+/* Content */
+
+article.post .entry-title a {
+	color: @heading_col;
+	&:hover {
+		color: @hover_col;
+	}
+}
+.post .entry-meta {
+	color: @text_col;
+	a {
+		color: @text_col;
+		&:hover {
+			color: @hover_col;
+		}
+	}
+}
+article.page .entry-title, .comments-area #respond #reply-title, .comments-area .comments-title {
+	color: @heading_col;
+}
+article.post .entry-summary .more-link, article.post .entry-content .more-link, article.page .entry-summary .more-link, article.page .entry-content .more-link, input[type="submit"] {
+	color: @text_button;
+	background: @col2;
+}
+article.post .entry-summary .more-link::after, article.post .entry-content .more-link::after, article.page .entry-summary .more-link::after, article.page .entry-content .more-link::after {
+	border-color: transparent transparent transparent @col2;
+}
+article.post .entry-summary .more-link:hover , article.post .entry-content .more-link:hover , article.page .entry-summary .more-link:hover , article.page .entry-content .more-link:hover, input[type="submit"]:hover {
+	background: @col1;
+}
+article.post .entry-summary .more-link:hover:after , article.post .entry-content .more-link:hover:after , article.page .entry-summary .more-link:hover:after , article.page .entry-content .more-link:hover:after {
+	border-color: transparent transparent transparent @col1;
+}
+.previous-post a, .nav-link #pre a, .next-post a, .nav-link #ne a  {
+	background-color: @col1;
+}
+.previous-post a::before, .nav-link #pre a::before {
+	border-color: transparent @col1 transparent transparent;
+}
+ .next-post a::after, .nav-link #ne a::after {
+	border-color: transparent transparent transparent @col1;	 
+}
+article.post, article.page {
+	border-bottom: 1px solid @border_col;
+}
+article.post::before, article.page::before {
+	border-top: 1px solid @border_col;
+}
+article.post::after {
+	border-bottom: 1px solid @border_col;
+}
+.site-footer {
+	background: @footer_col;
+}
+
+/* Elements */
+/* Callout */
+.callout-text {
+	background: @header_bg url('images/fabric-bg-ribbon.png');
+}
+.callout-text::before {
+	background: url('images/fabric-left-ribbon.png');
+}
+.callout-text::after {
+	background: url('images/fabric-right-ribbon.png');
+}
+/* element headings */
+h2.box-widget-title, #widget-boxes-container h2.box-widget-title, .recent_posts_post_title a, h3.widget-title {
+	color: @heading_col;
+}

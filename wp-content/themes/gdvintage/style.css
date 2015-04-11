@@ -1,0 +1,1453 @@
+/*
+	Theme Name: Go Daddy Vint Age
+	Theme URI: http://godaddy.com
+	Description: A Vintage WordPress Theme
+	Author: CyberChimps
+	Author URI: http://cyberchimps.com
+	Version: 1.2
+	License: Proprietary
+*/
+
+/********************************************************************************************************************/
+/********************************************** FONTS ***************************************************************/
+/********************************************************************************************************************/
+
+@import url(http://fonts.googleapis.com/css?family=Monoton);
+@import url(http://fonts.googleapis.com/css?family=Norican);
+/* Regular */
+@font-face {
+    font-family: 'League Gothic';
+    src: url('webfonts/leaguegothic-italic-webfont.eot');
+    src: url('webfonts/leaguegothic-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/leaguegothic-italic-webfont.woff') format('woff'),
+         url('webfonts/leaguegothic-italic-webfont.ttf') format('truetype'),
+         url('webfonts/leaguegothic-italic-webfont.svg#league_gothic_italicregular') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+/* Italic */
+@font-face {
+    font-family: 'League Gothic';
+    src: url('webfonts/leaguegothic-regular-webfont.eot');
+    src: url('webfonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/leaguegothic-regular-webfont.woff') format('woff'),
+         url('webfonts/leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('webfonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Condensed */
+@font-face {
+    font-family: 'League Gothic Condensed';
+    src: url('webfonts/leaguegothic-condensed-regular-webfont.eot');
+    src: url('webfonts/leaguegothic-condensed-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/leaguegothic-condensed-regular-webfont.woff') format('woff'),
+         url('webfonts/leaguegothic-condensed-regular-webfont.ttf') format('truetype'),
+         url('webfonts/leaguegothic-condensed-regular-webfont.svg#league_gothic_condensed-Rg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Condensed Italic */
+@font-face {
+    font-family: 'League Gothic Condensed';
+    src: url('webfonts/leaguegothic-condensed-italic-webfont.eot');
+    src: url('webfonts/leaguegothic-condensed-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/leaguegothic-condensed-italic-webfont.woff') format('woff'),
+         url('webfonts/leaguegothic-condensed-italic-webfont.ttf') format('truetype'),
+         url('webfonts/leaguegothic-condensed-italic-webfont.svg#league_gothic_condensed_itaRg') format('svg');
+    font-weight: normal;
+	font-style: italic;
+}
+
+/********************************************************************************************************************/
+/******************************************** MAIN HTML STYLES ******************************************************/
+/********************************************************************************************************************/
+body {
+	color:#555;
+	background: grey url('images/index_background.png');
+	padding: 0!important;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+a{
+	color:#975748;
+}
+a:hover{
+	color:#975748;
+	text-decoration:underline;
+}
+table .label {
+  background: none;
+  padding: 7px;
+  line-height: normal;
+  text-shadow: none;
+}
+tr {
+  border-bottom: 1px solid #ccc;
+}
+td { 
+	padding: 5px 20px;
+}
+dt {
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 26px; 
+}
+dd {
+  margin-bottom: 15px;
+  margin-left: 26px;
+}
+ul, ol { 
+	margin: 0 0 10px 0;
+}
+ol, ul {
+  list-style-position: inside;
+  margin-left: 21px;
+}
+pre {
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+code {
+	white-space: pre-wrap;
+}
+header {
+	margin-top: 15px;
+  margin-bottom: 15px;
+}
+.clear{
+  clear: both;
+}
+.clear-right {
+	clear: right;
+}
+.clear-left {
+	clear: left;
+}
+
+/********************************************************************************************************************/
+/******************************************** HEADER ****************************************************************/
+/********************************************************************************************************************/
+
+.container-full.top-header {
+	margin-bottom: 30px;
+	padding-bottom: 5px;
+	background: #904f41 url( 'images/img-navbar.png' );
+	-webkit-box-shadow:  0px 5px 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow:  0px 5px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+
+/*======================================= SOCIAL ==============================================*/
+
+#social a {
+	display: inline-block;
+	padding: 0;
+  margin-right: 3px;
+	zoom: 1;
+	*display: inline;
+}
+#social a img {
+	margin-top: -8px;
+}
+@media (max-width: 979px) {
+	.nav-collapse #social {
+		margin: 20px 0 0 10px;
+	}
+}
+
+/*======================================= DETAILS =============================================*/
+
+header#cc-header {
+	margin-top: 5px;
+	margin-bottom: 30px;
+	padding-bottom: 3px;
+}
+#cc-header .span7{
+	width:100%;
+}
+header#cc-header h1.site-title  a{
+	color:black;
+}
+header#cc-header h1.site-title a:hover {
+	text-decoration: none;
+}
+header#cc-header h1.site-title {
+	font-family: 'Monoton', cursive;
+	text-transform: lowercase;
+	text-align: center;
+  font-size: 6em;
+	margin-bottom: 5px;
+	line-height: 1em;
+}
+#cc-header .span7 #logo {
+	text-align: center;
+}
+#cc-header .site-description {
+	font-size: 2em;
+	width: 100%;
+	margin-left: 0;
+	text-align: center;
+}
+@media (max-width: 767px) {
+	header#cc-header h1.site-title {
+		font-size: 4em;
+  }
+	#cc-header .site-description {
+		font-size: 1.5em;
+	}
+}
+
+/*======================================= SEARCH =============================================*/
+header #search.span5 {
+	width: 100%;
+	text-align: center;
+}
+header #search.span5 #searchform {
+	float: none;
+}
+header #search.span5 #searchform .search-query {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+/********************************************************************************************************************/
+/******************************************** MENU ******************************************************************/
+/********************************************************************************************************************/
+
+#navigation {
+ 	margin: 20px 0 0 0; 
+}
+.main-navigation.navbar {
+	margin-bottom: 0;
+}
+.main-navigation .navbar-inner {
+	padding: 0;
+  border: none;
+	box-shadow: none;
+	background-color: transparent;
+	background-image: none;
+	filter: none;
+}
+.main-navigation .nav {
+	width: 100%;
+	text-align: center;
+}
+.main-navigation .nav > li {
+	float: none;
+	display: inline-block;
+	margin-bottom: 10px;
+	zoom: 1;
+	*display: inline;
+}
+.main-navigation .nav > li > a {
+	padding: 0 10px;
+	font-family: 'League Gothic';
+	font-size: 28px;
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	text-transform: uppercase;
+	line-height: 1em;
+}
+.navbar .nav > li + li {
+	background: url('images/separator.png') 0 10px no-repeat;
+	padding-left: 15px;
+}
+.navbar .nav > li#social {
+	background: none;
+}
+.main-navigation .nav > li > a:hover {
+	color: #999;
+}
+.navbar .nav li.dropdown > a:hover .caret {
+	border-top-color: #999;
+	border-bottom-color: #999;	
+}
+.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle, .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+	color: #999;
+	background: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+.navbar .nav li.dropdown.open > .dropdown-toggle .caret, .navbar .nav li.dropdown.active > .dropdown-toggle .caret, .navbar .nav li.dropdown.open.active > .dropdown-toggle .caret {
+	border-top-color: #999;
+	border-bottom-color: #999;
+}
+.main-navigation .nav > li > ul {
+	text-align: left;
+}
+.main-navigation .nav li ul li ul {
+  list-style: none;
+  margin-left: 0;
+}
+.main-navigation .nav li ul li ul li a{
+  padding-left: 24px;
+}
+.main-navigation .nav li ul li ul li ul li a {
+	padding-left: 30px;
+}
+.main-navigation .nav li.dropdown:hover ul.dropdown-menu {
+  display: block;
+	margin-top: 0;
+	border: 2px solid #914F40;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+.main-navigation .nav li ul li a:hover {
+  color: #999;
+  background: none;
+}
+#navigation #searchform {
+	margin-right: 15px;
+}
+.current-menu-ancestor.dropdown {
+	background-color: #111;
+}
+.navbar .nav > li.current-menu-ancestor > a {
+	color: #999;
+}
+.navbar .nav li.dropdown > .dropdown-toggle .caret {
+	border-top-color: #fff;
+	border-bottom-color: #fff;
+}
+.navbar .btn-navbar {
+	background-color: #774137;
+	background-image: none;
+}
+.navbar .btn-navbar:hover {
+	background-color: #534335;
+	background-image: none;
+}
+.navbar .nav > li > .dropdown-menu::before {
+	position: absolute;
+	top: -7px;
+	left: 50%;
+	margin-left: -5px;
+	display: inline-block;
+	border-right: 7px solid transparent;
+	border-bottom: 7px solid #914F40;
+	border-left: 7px solid transparent;
+	content: '';
+}
+.navbar .nav > li > .dropdown-menu::after {
+	position: absolute;
+	top: -5px;
+	left: 50%;
+	margin-left: -3px;
+	display: inline-block;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #fff;
+	border-left: 5px solid transparent;
+	content: '';
+}
+
+@media (max-width: 979px) {
+	.nav-collapse .nav > li {
+		display: block;
+		text-align: left;
+	}
+	.navbar .nav > li + li {
+		background: none;
+		padding: 0;
+	}
+	.main-navigation .nav > li > a:hover {
+		background: transparent;
+	}
+	.navbar .nav > li > .dropdown-menu::before {
+		display: none;
+	}
+	.navbar .nav > li > .dropdown-menu::after {
+		display: none;
+	}
+	.main-navigation .nav li.dropdown:hover ul.dropdown-menu {
+		border: none;
+	}
+	.nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
+		font-weight: normal;
+	}
+	.navbar-inverse .nav-collapse .nav > li > a:hover, .navbar-inverse .nav-collapse .dropdown-menu a:hover {
+		color: #fff;
+	}
+	.navbar-inverse .nav-collapse .nav > li.current-menu-item > a, .navbar-inverse .nav-collapse .nav > li.current-menu-ancestor > a {
+		color: #fff;
+	}
+	.nav-collapse .dropdown .caret {
+		display: none;
+	}
+	.nav-collapse .dropdown-menu {
+		display: block;
+	}
+	.navbar-inverse .nav-collapse .dropdown-menu .active > a {
+		color: #fff;
+		background-image: none;
+		background-color: #000;
+	}
+	.navbar .nav > li + li {
+		background-image: none!important;
+	}
+}
+
+/********************************************************************************************************************/
+/******************************************** MAIN CONTENT **********************************************************/
+/********************************************************************************************************************/
+
+.border-sep {
+	height: 3px;
+	width: 100%;
+	margin-bottom: 30px;
+	border-top: 1px solid #C5C2BC;
+	border-bottom: 1px solid #C5C2BC;
+}
+.container {
+  background: transparent;
+}
+#content.content-sidebar-right article {
+	margin-right: 2%;
+}
+#content.content-sidebar-left article {
+	margin-left: 2%;
+}
+#content.content-sidebar-2-right article {
+	margin-right: 2%;
+}
+#content.content-sidebar-2 article {
+	margin-right: 2%;
+	margin-left: 2%;
+}
+@media (max-width: 767px) {
+	.container {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+}
+#container{
+	margin-top: 20px;
+}
+article.post, article.page, article.attachment {
+  margin-bottom: 15px;
+  padding: 20px;
+}
+.entry-content {
+  margin: 20px 0;
+}
+.page-header {
+  margin-top: 0;
+  padding: 0;
+  border: none;
+}
+article.post, article.page{
+	background:none;
+	padding:0;
+	border-bottom:1px solid #C5C2BC;
+	margin-bottom: 30px;
+}
+article.post header, article.page header{
+	margin-bottom:20px;
+}
+article.post:before , article.page:before{
+	border-top: 1px solid #C5C2BC;
+	content: '';
+	width: 100%;
+	margin-top: 3px;
+	margin-bottom: 40px;
+}
+article.post .entry-title a{
+	font-family:'League Gothic';
+	font-size:1.5em;
+	text-align:left;
+	display:block;
+	color:#8f4d3f;
+}
+article.page .entry-title{
+	font-family:'League Gothic';
+	font-size:2.5em;
+	text-align:left;
+	display:block;
+	color:#8f4d3f;
+}
+article.post .entry-summary p:last-child, article.page .entry-summary p:last-child{
+	margin:0;
+}
+article.post .entry-content p:last-child, article.page .entry-content p:last-child{
+	margin:40px 0 40px 0;
+}
+article.post .entry-summary .more-link, article.post .entry-content .more-link, article.page .entry-summary .more-link, article.page .entry-content .more-link {
+	font-family:'League Gothic';
+	font-size:20px;
+	float: left;
+	height: 16px;
+	line-height: 16px;
+	position: relative;
+	vertical-align:middle;
+	margin: 20px 0px 30px 0px;
+	padding: 8px 10px 8px 14px;
+	background: #475871;
+	color: #fff;
+	text-decoration: none;
+}
+article.post .entry-summary .more-link:after, article.post .entry-content .more-link:after , article.page .entry-summary .more-link:after , article.page .entry-content .more-link:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: -16px;
+	width: 0;
+	height: 0;
+	border-color: transparent transparent transparent #475871;
+	border-style: solid;
+	border-width: 16px 0 16px 16px;
+}
+article.post .entry-summary .more-link:hover , article.post .entry-content .more-link:hover , article.page .entry-summary .more-link:hover , article.page .entry-content .more-link:hover {
+	color:#fff;
+	background:#555;
+	text-decoration:none;
+}
+article.post .entry-summary .more-link:hover:after , article.post .entry-content .more-link:hover:after , article.page .entry-summary .more-link:hover:after , article.page .entry-content .more-link:hover:after {
+	border-color: transparent transparent transparent #555;
+}
+article.post{
+}
+article.post:after{  
+	border-bottom: 1px solid #c5c2bc;  
+	content: '';  
+	width:100%;
+	margin-top:3px;
+	margin-bottom:3px;
+	display:table;
+}  
+
+/*==================================== POST AND PAGE CONTENT ===========================================*/
+
+article {
+  background: #fff;
+}
+.entry-header {
+  margin-top: 0;
+}
+.entry-summary {
+  margin: 10px 0;
+}
+#content .page-header .page-title{
+	font-family:'League Gothic';
+	font-size:30px;	
+	color:#000;
+}
+.postformats {
+  float: right;
+}
+blockquote { 
+	background-color: #ccc;
+	margin: 20px 10px;
+	padding: 3px;
+}
+blockquote p {
+  margin: 10px;
+}
+blockquote cite {
+  font-size: 0.9em;
+}
+blockquote cite:before {
+  content: ' ? ';
+  position: relative;
+  top: -2px;
+  margin: 0 5px; 
+}
+.page-links {
+  clear: both;
+}
+.more-content{
+	background:none;
+	padding:0px 20px ;
+}
+.previous-post a, .nav-link  #pre a{
+	font-family:'League Gothic';
+	font-size:20px;
+	float: left;
+	height: 16px;
+	line-height: 16px;
+	position: relative;
+	vertical-align:middle;
+	margin: 0;
+	padding: 8px 14px 8px 10px;
+	background: #975748;
+	color: #fff;
+	text-decoration: none;
+}
+.previous-post a:before, .nav-link #pre a:before{
+content: "";
+  position: absolute;
+  top: 0;
+  left: -16px;
+  width: 0;
+  height: 0;
+  border-color: transparent #975748 transparent transparent;
+  border-style: solid;
+  border-width: 16px 16px 16px 0;
+  }
+.previous-post a:hover, .nav-link #pre a:hover{
+	color:#fff;
+	background:#555;
+	text-decoration:none;
+}
+.previous-post a:hover:before, .nav-link #pre a:hover:before {
+	border-color: transparent #555 transparent transparent;
+}
+.next-post a, .nav-link #ne a{
+	font-family:'League Gothic';
+	font-size:20px;
+	float: right;
+	height: 16px;
+	line-height: 16px;
+	position: relative;
+	vertical-align:middle;
+	margin: 0;
+	padding: 8px 10px 8px 14px;
+	background: #975748;
+	color: #fff;
+	text-decoration: none;
+}
+.next-post a:after, .nav-link #ne a:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	right: -16px;
+	width: 0;
+	height: 0;
+	border-color: transparent transparent transparent #975748;
+	border-style: solid;
+	border-width: 16px 0 16px 16px;
+}
+.next-post a:hover, .nav-link #ne a:hover{
+	color:#fff;
+	background:#555;
+	text-decoration:none;
+}
+.next-post a:hover:after,  .nav-link #ne a:hover:after {
+	border-color: transparent transparent transparent #555;
+}
+input[type="submit"] {
+	background:#975748;
+	color:white;
+	border:none;
+	font-family: 'League Gothic';
+	font-size:20px;
+	padding:5px 10px 5px 10px;
+	min-width:70px;
+}
+.nav-link{
+	padding:0px 20px 0px 20px;
+	height:50px;
+}
+
+/*==================================== TAXONOMY ========================================================*/
+
+h2.entry-title {
+  margin-top: 0;
+  margin-bottom: 5px;
+  line-height: 1em;
+	font-size: 1.6em;
+}
+h2.entry-title a {
+  color: #333333;
+}
+h2.entry-title a:hover {
+  color: #49576B;
+	text-decoration: none;
+}
+article.post p, article.page p {
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+/*==================================== IMAGES ==========================================================*/
+
+.featured-image {
+	margin: 0 0 20px 0;
+	float: none;
+	max-width:100%;
+}
+article .featured-image img{
+	width:100%;
+}
+.alignnone {
+	display: block;
+  margin: 5px 20px 20px 0;
+}
+.aligncenter, div.aligncenter {
+  display:block;
+  margin: 5px auto 5px auto;
+}
+.alignright {
+  float:right;
+  margin: 5px 0 20px 20px;
+}
+.alignleft {
+  float:left;
+  margin: 5px 20px 20px 0;
+}
+.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+a img.alignright {
+  float:right;
+  margin: 5px 0 20px 20px;
+}
+a img.alignnone {
+  margin: 5px 20px 20px 0;
+}
+a img.alignleft {
+  float:left;
+  margin: 5px 20px 20px 0;
+}
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+img.size-full {
+	max-width: 100%;
+	height: auto;
+}
+.wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%; /* Image does not overflow the content area */
+  padding: 15px 3px 10px;
+  text-align: center;
+}
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0;
+}
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0;
+}
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px;
+}
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin:0;
+  max-width: 95%;
+  padding:0;
+  width: auto;
+}
+.wp-caption p.wp-caption-text {
+  font-size:11px;
+  line-height:17px;
+  margin:0;
+  padding:0 4px 5px;
+}
+.caption_title {
+  font-size:16px;
+}
+.gallery-pagination {
+  margin: 20px 0;
+}
+.gallery-pagination .previous-image a {
+  float: left;
+}
+.gallery-pagination .next-image a {
+  float: right;
+}
+
+/*==================================== META ============================================================*/
+
+.entry-meta {
+  color: #999;
+	margin-top: 12px;
+  font-size: 0.85em;
+}
+footer.entry-meta {
+  clear: both;
+}
+.edit-link {
+  margin-bottom: 10px;
+}
+.edit-link a {
+  color: #fff;
+  background: #888;
+  padding: 2px 4px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+.edit-link a:visited {
+  color: #fff;
+}
+.edit-link a:hover {
+  text-decoration: none;
+  color: #ccc;
+}
+.cyberchimps_article_share {
+  float: right;
+}
+.post .entry-meta{
+	color:#656462;
+}
+.post .entry-meta a{
+	color:#000;
+}
+
+/*==================================== COMMENTS ========================================================*/
+
+.comments-area {
+  margin-bottom: 15px;
+  padding: 15px;
+  background: #fff;
+}
+#comments .navigation {
+  padding: 0 0 18px 0;
+}
+label[for="comment"] {
+  display: block;
+}
+ol.commentlist {
+  list-style: none;
+}
+ol.commentlist p {
+  margin-left: 8px;
+  clear: left; 
+}
+ol.commentlist li.comment {
+  padding: 10px;
+}
+ol.commentlist li.comment div.vcard cite.fn {
+  font-style: normal;
+}
+ol.commentlist li.comment div.vcard img.avatar {
+  margin: 0 10px 10px 10px;
+}
+ol.commentlist li.comment div.comment-meta {
+  font-size: 11px;
+}
+ol.commentlist li.comment div.comment-meta a {
+  color: #888;
+}
+ol.commentlist li.comment div.reply {
+  font-size: 11px;
+  margin-left: 8px;
+}
+ol.commentlist li.comment div.reply a {
+  font-weight: bold;
+}
+ol.commentlist li.comment ul.children {
+  list-style: none;
+  margin: 10px 0 0;
+}
+ol.commentlist li.comment ul.children li.depth-2 {
+  margin: 0 0 10px 10px;
+}
+ol.commentlist li.comment ul.children li.depth-3 {
+  margin: 0 0 10px 10px;
+}
+ol.commentlist li.comment ul.children li.depth-4 {
+  margin: 0 0 10px 10px;
+}
+ol.commentlist li.even {
+  background: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+ol.commentlist li.odd {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+.comment, .trackback, .pingback {
+  padding:10px;
+  margin:10px 0 10px 0;
+}
+.odd {
+  background:#f8f8f8;
+}
+#form-allowed-tags code {
+  font-size:12px;
+}
+#respond input, #respond textarea {
+  margin:0 5px 5px 0;
+  overflow:auto;
+}
+#respond textarea {
+  width:99%;
+  height:150px;
+}
+.avatar {
+  float:left;
+}
+.comments-area{
+	background:none;
+	padding:0;
+}
+.comments-area .comments-title{
+	font-family:'League Gothic';
+	font-size:35px;
+	color:#000;
+}
+ol.commentlist{
+	margin-left:0;
+}
+ol.commentlist li.even{
+	background:none;
+}
+.comments-area #respond #reply-title{
+	font-family:'League Gothic';
+	font-size:30px;
+	color:#000;
+}
+article.comment{
+	background:none;
+}
+ol.commentlist li.odd {
+	background: none;
+}
+.submit{
+	background:#475871;
+	color:white;
+	border:none;
+	font-family: 'League Gothic';
+	font-size:20px;
+	padding:5px;
+	min-width:70px;
+}
+.submit:after{
+    backgound: 1px solid #c5c2bc;  
+    content: '';  
+	width:100%;
+	margin-top:3px;
+	margin-bottom:40px;
+}
+
+/********************************************************************************************************************/
+/******************************************** SIDEBAR & WIDGETS *****************************************************/
+/********************************************************************************************************************/
+
+.widget-container {
+  margin-bottom: 15px;
+  padding: 0;
+}
+h3.widget-title{
+	font-family: 'League Gothic';
+	font-size: 30px;
+	text-align: left;
+	display: block;
+	color: #000;
+}
+.widget-container ul, .widget ul {
+  margin-left: 5px;
+}
+.widget-container ul li, .widget ul li {
+  font-size: 14px;
+  line-height: 1.8em;
+  list-style: none;
+}
+table#wp-calendar {
+  width: 100%;
+}
+table#wp-calendar th {
+	font-size: 14px;
+}
+table#wp-calendar td {
+	font-size: 14px;
+	width: 14.28571428571429%;
+	padding: 5px 0;
+  text-align: center;
+}
+table#wp-calendar td {
+  text-align: center;
+}
+.widget-container #searchform.pull-right {
+	margin-right: 30px;
+}
+.widget-container #searchform input.input-medium {
+	float: none;
+	display: inline-block;
+	width: 100%;
+}
+
+/*==================================== SEARCH FORM ====================================================*/
+
+#searchform {
+	margin-bottom: 5px;
+}
+.widget-container #searchform input.input-medium {
+	float: none;
+	display: inline-block;
+	width: 100%;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+input.search-query {
+	background: #f6f3ee url('images/search-go.png') no-repeat right;
+	font-size:14px;
+	padding:4px 20px 4px 10px;
+}
+
+/********************************************************************************************************************/
+/******************************************** FOOTER ****************************************************************/
+/********************************************************************************************************************/
+
+.site-footer{
+	padding: 40px 0 30px 0;
+	margin-bottom: 0;
+	background: #2c2927;
+}
+#footer-widgets {
+  margin-bottom: 20px;
+}
+#footer-widgets .widget-container {
+  border: none;
+}
+#footer-widget-container {
+}
+.site-footer .nav, .site-footer .nav > li {
+	float: left;
+	display: block;
+}
+.site-footer #copyright {
+	text-align: right;
+	float: right;
+	color: #b4b1aa;
+}
+.nav-footer  li{
+	margin-right: 5px;
+	margin-bottom: 10px;
+	padding-right: 5px;
+	border-right: 1px solid #b4b1aa; 
+	line-height: 13px;
+}
+.nav-footer  li:last-child{
+	border-right: none;
+}
+.nav-footer li ul.sub-menu {
+	display: none;
+}
+.nav-footer > li > a:hover {
+	background: none;
+}
+
+/********************************************************************************************************************/
+/******************************************** WORDPRESS DEFAULTS ****************************************************/
+/********************************************************************************************************************/
+
+.sticky{}
+.gallery-caption{}
+.bypostauthor{}
+
+/********************************************************************************************************************/
+/******************************************** ELEMENTS **************************************************************/
+/********************************************************************************************************************/
+
+/*==================================== CALLOUT ====================================================*/
+
+.callout-title{
+	display:none;
+}
+#callout{
+	background: none;
+	color:white;
+	font-family:'Norican';
+	text-align:center;
+}
+.callout-text p{
+	text-align: center;
+	margin: 0px;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	font-size:1em;
+}
+.callout-text {
+	position: relative;
+	background: url('images/bg-ribbon.png');
+	color: #fff;
+	text-align: center;
+}
+@media (min-width: 100px) {
+	#callout{
+		padding:0;
+	}
+	.callout-text {
+		position: relative;
+		background: url('images/bg-ribbon.png');
+		color: #fff;
+		text-align: center;
+	}
+	.callout-text p{
+		padding:20px;
+		font-size:1.5em;
+	}
+}
+@media (min-width: 660px) {
+	.callout-text p{
+		font-size:1.2em;
+	}
+	#callout{
+		padding:20px;
+	}
+	.callout-text {
+		min-height: 77px;
+		line-height: 77px;
+		position: relative;
+		background: url('images/bg-ribbon.png');
+		color: #fff;
+		text-align: center;
+		margin:0 50px 0px 50px;
+	}
+	.callout-text:before, .callout-text:after {
+		content: ''; 
+		position: absolute;
+		top: 0;
+	}
+	.callout-text:before {
+		left: -70px;
+		bottom: 0;
+		width: 70px;
+		min-height: 77px;
+		background: url('images/left-ribbon.png');
+	}
+	.callout-text p{
+		text-align: center;
+		margin: 0px;
+		line-height:77px;
+		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+		padding:0;
+	}
+	.callout-text:after {
+		right: -70px; 
+		bottom: 0;
+		width: 70px;
+		min-height: 77px;
+		background: url('images/right-ribbon.png');
+	}
+}
+@media (min-width: 768px) {
+	.callout-text p{
+		font-size:1.3em;
+	}
+}
+@media (min-width: 980px) {
+	.callout-text p{
+		font-size:1.9em;
+	}
+}
+@media (min-width: 1200px) {
+	.callout-text p{
+		font-size:2.1em;
+	}
+}
+#callout_button .btn-large {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+#callout_button .btn-primary {
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+	background-color: #975748;
+	background-image: none;
+	border-color: #04c #04c #002a80;
+	border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+	filter: none;
+}
+#callout_button .btn-primary:hover {
+	background-color: #49576B;
+}
+
+/*==================================== WIDGET BOXES ===============================================*/
+
+.box {
+  padding: 20px;
+  margin-bottom: 20px;
+  background: #fff;
+}
+.box ul {
+	margin: 0;
+}
+#widget-boxes-container .box, .box ul li a {
+	text-align: left;
+}
+
+/*==================================== BOXES ======================================================*/
+
+.box a {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.box-no-url {
+	cursor: default;
+}
+.box{
+	background: transparent;
+	padding: 0;
+}
+h2.box-widget-title{
+	font-family: 'League Gothic';
+	font-size: 30px;
+	text-align: left;
+	display: block;
+	color: #8f4d3f;
+}
+#widget-boxes-container h2.box-widget-title{
+	color: #000;
+}
+.box p{
+	text-align:left;
+	margin-top:25px;
+}
+#widget-boxes-container{
+	border-top:1px solid #c5c2bc;
+	margin-top:20px;
+}
+#widget-boxes-container:before {  
+	border-top: 1px solid #c5c2bc;  
+	content: '';  
+	width:100%;
+	margin-top:3px;
+	margin-bottom:40px;
+}  
+.box .box-no-url, .box .box-link{
+	background:#fff;
+	padding:10px;
+	border:1px solid #ccc;
+	display:block;
+} 
+#boxes-container .box a {
+	display: block;
+	width: auto;
+	text-align: center;
+}
+#boxes-container .box a img {
+	width: 100%;
+	height: auto;
+}
+/*==================================== CAROUSEL ===================================================*/
+
+#cc-carousel {
+  padding: 10px 50px;
+}
+#cc-carousel ul {
+  max-height: 150px;
+  width: 100%;
+  margin: 0;
+  padding: 0; 
+}
+#cc-carousel ul li {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0;
+}
+#cc-carousel ul li .carousel_item {
+}  
+#cc-carousel ul li .carousel_caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+}
+#cc-carousel ul li .carousel_caption p {
+  color: #fff;
+  font-size: 1em;
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+}
+#cc-carousel .carousel-control {
+  top: 50%;
+  border: none;
+}
+#cc-carousel .carousel-control.left {
+  left: 5px;
+}
+#cc-carousel .carousel-control.right {
+  right: 5px;
+}
+@media (max-width: 767px) {
+  #cc-carousel [class*="span"], .row-fluid #cc-carousel [class*="span"] {
+    float: left;
+    width: 14.364640883%;
+    margin-left: 2.762430939%;
+  }
+  #cc-carousel [class*="span"]:first-child, .row-fluid #cc-carousel [class*="span"]:first-child {
+    margin-left: 0;
+  }
+}
+
+/*==================================== SLIDER ======================================================*/
+
+#slider .carousel-control {
+	line-height: 30px;
+}
+.carousel-control {
+	left: 0;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	padding: 5px;
+	border: none;
+}
+.carousel-control.right {
+	right: 0;
+	left: auto;
+}
+#carousel {
+	padding: 0;
+}
+#carousel ul li a{
+	background: #fff;
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+.carousel-inner{
+	-webkit-box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.5);
+}
+#carousel li .carousel_caption{
+	color: #975748;
+}
+
+/*==================================== TWITTER =====================================================*/
+
+#twitter-container {
+  margin-bottom: 20px;
+}
+#twitter-bar {
+  background: #fff;
+	padding: 20px;
+}
+#twitter-bar #twitter-text img {
+	float: left;
+	margin-top: -5px;
+}
+#twitter-bar #twitter-text p {
+	padding-left: 75px;
+}
+@media (max-width: 480px) { 
+	#twitter-bar #twitter-text img {
+		width: 30px;
+		height: 21px;
+		margin-top: 0;
+	}
+	#twitter-bar #twitter-text p {
+		padding-left: 40px;
+	}
+}
+#twitter-bar {
+	background:none;
+	padding:0;
+}
+
+/*==================================== RECENT POSTS ================================================*/
+
+#recent_posts {
+	margin-bottom: 20px;
+	padding: 0;
+	background: none;
+}
+#recent_posts p{
+	margin-top: 20px;
+}
+.recent-posts-image, .featured-image{
+	background:#fff;
+	-webkit-box-shadow:  0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+	box-shadow:  0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+	padding:10px;
+}
+#recent_posts img{
+	width: 100%;
+}
+h5.recent_posts_post_title {
+	font-family: 'League Gothic';
+	font-size: 30px;
+	text-align: left;
+	display: block;
+	color: #8F4D3F;
+	margin-bottom:20px;
+}
+.recent_posts_post_title a{
+	font-family:'League Gothic';
+	font-size:30px;
+	text-align:left;
+	display:block;
+	color:#8f4d3f;
+	line-height: 1em;
+}
+.recent_posts_byline{
+	display:none;
+}
+#recent_posts #recent_posts_wrap [class*="span"]:nth-child(4) {
+	margin-left: 0;
+}
+#recent_posts .more-link{
+	display:none;
+}
+#recent_posts #recent_posts_wrap #recent-posts-container p:nth-child(5){
+	display:none;
+}
+#recent_posts p:last-child a.excerpt-more{
+	display:none;
+}
+
+/*==================================== BREADCRUMBS =================================================*/
+
+.breadcrumbs {
+	background: none;
+	margin-bottom: 20px;
+	padding: 3px 0px 10px 0px;
+	font-size: 1.1em;
+	border-top: 1px solid #cfccc6;
+	border-bottom: 1px solid #cfccc6;
+	color:#cdcac4;
+}
+.breadcrumbs:before {
+	border-top: 1px solid #cfccc6;
+	content: '';
+	width: 100%;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	display: table;
+}
+.breadcrumbs a {
+	color:#ceb8b0;
+}
+
+/*==================================== PAGINATION ==================================================*/
+
+.pagination{
+	display:none;
+}
+
+/********************************************************************************************************************/
+/****************************************** MEDIA QUERIES ***********************************************************/
+/********************************************************************************************************************/
+
+/*==================================== PHONES ====================================================*/
+
+@media (max-width: 480px) { 
+	header#cc-header .span7 {
+		text-align: center;
+	}
+	header#cc-header .span5 {
+		text-align: center;
+	}
+	header#cc-header .span5 div.icons a {
+		float: none;
+	}
+	header#cc-header .span5 div.blog-description {
+		float: none;
+	}
+	header#cc-header .span5 div.register {
+		float: none;
+	}
+	header#cc-header .span5 #searchform {
+		float: none;
+	}
+}

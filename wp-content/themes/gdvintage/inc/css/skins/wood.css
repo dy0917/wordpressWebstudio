@@ -1,0 +1,80 @@
+body {
+  color: #dddddd;
+  background: #654336 url('images/wood.jpg');
+}
+a {
+  color: #d0afa8;
+}
+a:hover {
+  color: #99817c;
+}
+.container-full.top-header {
+  background: #5d3028 url('images/wood-banner.png');
+}
+header#cc-header h1.site-title a {
+  color: #ffffff;
+}
+/* Content */
+article.post .entry-title a {
+  color: #ffffff;
+}
+article.post .entry-title a:hover {
+  color: #d0afa8;
+}
+.post .entry-meta {
+  color: #dddddd;
+}
+.post .entry-meta a {
+  color: #dddddd;
+}
+.post .entry-meta a:hover {
+  color: #d0afa8;
+}
+article.page .entry-title,
+.comments-area #respond #reply-title {
+  color: #ffffff;
+}
+article.post .entry-summary .more-link,
+article.post .entry-content .more-link,
+article.page .entry-summary .more-link,
+article.page .entry-content .more-link {
+  background: #99817c;
+}
+article.post .entry-summary .more-link::after,
+article.post .entry-content .more-link::after,
+article.page .entry-summary .more-link::after,
+article.page .entry-content .more-link::after {
+  border-color: transparent transparent transparent #99817c;
+}
+article.post .entry-summary .more-link:hover,
+article.post .entry-content .more-link:hover,
+article.page .entry-summary .more-link:hover,
+article.page .entry-content .more-link:hover {
+  background: #d0afa8;
+}
+article.post .entry-summary .more-link:hover:after,
+article.post .entry-content .more-link:hover:after,
+article.page .entry-summary .more-link:hover:after,
+article.page .entry-content .more-link:hover:after {
+  border-color: transparent transparent transparent #d0afa8;
+}
+.site-footer {
+  background: #1e1c1a;
+}
+/* Elements */
+/* Callout */
+.callout-text {
+  background: #5d3028 url('images/wood-bg-ribbon.png');
+}
+.callout-text::before {
+  background: url('images/wood-left-ribbon.png');
+}
+.callout-text::after {
+  background: url('images/wood-right-ribbon.png');
+}
+/* element headings */
+h2.box-widget-title, #widget-boxes-container h2.box-widget-title,
+.recent_posts_post_title a,
+h3.widget-title {
+  color: #ffffff;
+}
