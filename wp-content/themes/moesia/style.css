@@ -1965,4 +1965,6 @@ noul
     margin: 6rem;
     float: right;
     font-size: 1.2rem;
+    z-index: 1;
+    position: inherit;
 }

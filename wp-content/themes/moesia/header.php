@@ -95,8 +95,8 @@
                         </video>
 
                         <div class="headervideodiv">
-                            <h1><?php if ($htext) echo esc_html($htext); ?></h1>
-                            <p></p>
+                            <h1>You can Start your website like the sunrise</h1>
+                            <p class="site-description">Let us to build what you want.</p>
                         </div>
                         <!--original method-->
                         <!--                        <div class="welcome-info">
